@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
-gem "bosh-bootstrap" # includes bosh_cli & bosh_cli_plugin_micro
+# gem "bosh-bootstrap" # includes bosh_cli & bosh_cli_plugin_micro
+# Hacked bosh-bootstrap to use m3.medium instances instead of (no longer available) m1.medium
+gem "bosh-bootstrap", git: "https://github.com/thewoolleyman/bosh-bootstrap.git"
 gem "traveling_bosh_cli_plugin"
 gem "bosh_cli_plugin_consul"
 gem "bosh-workspace", ">= 0.8.5"

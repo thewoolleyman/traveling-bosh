@@ -62,6 +62,20 @@ GIT
       pg (~> 0.15.1)
       sequel (~> 3.43.0)
 
+GIT
+  remote: https://github.com/thewoolleyman/bosh-bootstrap.git
+  revision: 6931b070d62b915db0c9e2567edc9c7bb49bec0d
+  specs:
+    bosh-bootstrap (0.15.0)
+      bosh_cli_plugin_micro
+      cyoi (~> 0.11)
+      fog (~> 1.11)
+      httpclient (= 2.4.0)
+      rbvmomi
+      readwritesettings (~> 3.0)
+      redcard
+      thor (~> 0.18)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,15 +92,6 @@ GEM
       httpclient (= 2.4.0)
       multi_json (~> 1.1)
       ruby-atmos-pure (~> 1.0.5)
-    bosh-bootstrap (0.15.0)
-      bosh_cli_plugin_micro
-      cyoi (~> 0.11)
-      fog (~> 1.11)
-      httpclient (= 2.4.0)
-      rbvmomi
-      readwritesettings (~> 3.0)
-      redcard
-      thor (~> 0.18)
     bosh-director-core (1.2809.0)
       bosh-template (~> 1.2809.0)
       bosh_common (~> 1.2809.0)
@@ -251,7 +256,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bosh-bootstrap
+  bosh-bootstrap!
   bosh-registry!
   bosh-workspace (>= 0.8.5)
   bosh_cli_plugin_consul
